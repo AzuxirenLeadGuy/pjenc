@@ -1,0 +1,2 @@
+pass.key 		# The private key that should NOT be shared publicly
+.pjconfig/temp 	# Temporary file 

@@ -2,7 +2,6 @@
 import abc
 import argparse
 import dataclasses
-import fileinput
 import getpass
 import json
 import logging

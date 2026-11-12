@@ -12,8 +12,18 @@ import sys
 
 main_logger = logging.getLogger(__name__)
 
+
+# The name of the private key file
 PRIVATE_KEYFILE_NAME = "pass.key"
+
+# The name of the public key file
 PUBLIC_KEYFILE_NAME = "public_key"
+
+# The name of the config directory
+CONFIG_DIR_NAME = ".pjconfig"
+
+# The name of the config file
+CONFIG_FILE_NAME = "config.json"
 
 
 class Cipher(abc.ABC):
@@ -186,13 +196,6 @@ class ConfigData:
 
     openssl_path: str
     """The command/path for openssl"""
-
-
-# The name of the config directory
-CONFIG_DIR_NAME = ".pjconfig"
-
-# The name of the config file
-CONFIG_FILE_NAME = "config.json"
 
 
 def setup_main(args: argparse.ArgumentParser):
